@@ -7,7 +7,7 @@ It implements basic CRM/ERP flows for leads, clients, products, and claims with 
 
 - **Backend**
   - Python / FastAPI
-  - Tortoise ORM (PostgreSQL or SQLite, depending on your config)
+  - Tortoise ORM PostgreSQL
   - JWT auth
 - **Frontend**
   - React + Vite
