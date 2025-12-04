@@ -7,7 +7,7 @@ It implements basic CRM/ERP flows for leads, clients, products, and claims with 
 
 - **Backend**
   - Python / FastAPI
-  - Tortoise ORM (PostgreSQL or SQLite, depending on your config)
+  - Tortoise ORM PostgreSQL
   - JWT auth
 - **Frontend**
   - React + Vite
@@ -122,12 +122,6 @@ The frontend Axios instance (`src/api/axios.js`) points to the backend API base 
 - **Frontend**:
   - ESLint via `npm run lint`.
 
-## 7. Production Notes (High Level)
-
-- Use a real database (PostgreSQL) with proper connection settings.
-- Configure a production server (e.g. `gunicorn` + `uvicorn workers` or similar stack behind Nginx).
-- Build the frontend with `npm run build` and serve the `frontend/dist` folder behind a static file server.
-
-This README is a starting point; extend it with any deployment-specific instructions (Docker, CI/CD, hosting details, etc.) that you use. 
+ 
 
 
