@@ -42,7 +42,7 @@ const LeadForm = ({ initialValues, onSubmit, loading, error, submitText = 'Submi
         layout="vertical"
         onFinish={onFinish}
         initialValues={{
-          status: 'new',
+          status: 'uncontacted',
         }}
       >
         <Form.Item
@@ -84,7 +84,7 @@ const LeadForm = ({ initialValues, onSubmit, loading, error, submitText = 'Submi
           name="status"
         >
           <Select>
-            <Option value="new">New</Option>
+            <Option value="uncontacted">New</Option>
             <Option value="contacted">Contacted</Option>
             <Option value="qualified">Qualified</Option>
             <Option value="converted">Converted</Option>

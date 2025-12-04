@@ -18,6 +18,7 @@ class LeadService:
             status=lead_data.status,
             assigned_operator_id=lead_data.assigned_operator_id
         )
+        await lead.fetch_related("comments")
         return lead
 
     @staticmethod
@@ -79,6 +80,7 @@ class LeadService:
             await Lead.filter(id=lead_id).update(**update_data)
             await lead.refresh_from_db()
 
+        await lead.fetch_related("comments")
         return lead
 
     @staticmethod
