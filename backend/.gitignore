@@ -1,0 +1,33 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# Environment / secrets
+.env.local
+.env.*
+
+# Logs
+*.log
+
+# IDE / editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Bytecode / cache
+.mypy_cache/
+.pytest_cache/
+
+# Uploads (optional - keep if you don't want to track uploaded files)
+uploads/
+
+
